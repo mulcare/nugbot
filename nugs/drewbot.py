@@ -35,10 +35,11 @@ class Drewbot(commands.Cog):
 
 # With a populated list of lines, select a random line and return it. If
 # the list is empty, it is because the call to the bot was submitted
-# without a string to look for in the log. In that case, we can grab
-# populate the list with lines of a random minimum length (which gives
-# some variation and helps avoid the overrepresented relatively short
-# lines), and select one line randomly from that list.
+# without a string to look for in the log, or there was no match in the
+# log for the submitted string. In that case, we can populate the list 
+# with lines of a random minimum length (which gives some variation and 
+# helps avoid the overrepresented relatively short lines), and select
+# one line randomly from that list.
 
     def random_line(self, drew_lines):
         if not drew_lines:
