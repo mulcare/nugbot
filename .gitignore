@@ -1,5 +1,6 @@
 bot-env/
 config.yaml
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -139,3 +140,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# editor
+.vscode/
