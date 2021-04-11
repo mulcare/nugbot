@@ -29,7 +29,6 @@ async def on_ready():
 
 def load_nugs(nuglist):
     for nug in nuglist:
-        bot.load_extension(f'nugs.{nug}')
         try:
             bot.load_extension(f'nugs.{nug}')
             print(f'[BOT] nug loaded successfully: {nug}')
